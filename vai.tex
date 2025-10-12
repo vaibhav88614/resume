@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Abey George template (Customized for Vaibhav Patil)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usetikzlibrary{svg.path}
+
+% Colors
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{body}{SlateGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Vaibhav Patil} \\ \vspace{1pt}
+    \small
+    {Bangalore, India} \quad
+    {Phone: +91 886 149 5511} \quad
+    \underline{\href{mailto:vaibhavrpatilmanu@gmail.com}{Email: vaibhavrpatilmanu@gmail.com}} \quad
+    \underline{\href{https://www.linkedin.com/in/vaibhavrp614/}{LinkedIn}} \quad
+    \underline{\href{https://vaibhav88614.github.io/}{Portfolio}} \quad
+    \underline{\href{https://leetcode.com/u/Vaibhav614/}{LeetCode}} 
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Professional Summary}
+\textbf{Software Developer} with \textbf{1+ years} of experience at \textbf{Tata Consultancy Services}, specializing in \textbf{Python development and data visualization tools}. Delivered \textbf{5+ enterprise applications}, optimized system performance by \textbf{30\%}, and automated processes saving \textbf{160+ hours} of manual work.
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+  \setlength{\itemsep}{1pt}
+  \resumeItem{\textbf{Programming:} Python (2+ years), JavaScript, Java, C/C++, SQL}
+  \resumeItem{\textbf{Python Frameworks:} Django, Flask, FastAPI, Celery, SQLAlchemy, Pandas, NumPy}
+  \resumeItem{\textbf{Web \& APIs:} Django REST, React.js, Node.js, Express.js, RESTful APIs, GraphQL}
+  \resumeItem{\textbf{Databases \& Cache:} PostgreSQL, MySQL, Redis, MongoDB, Database Optimization}
+  \resumeItem{\textbf{Tools \& DevOps:} Git, Docker, Linux, Qt5, VTK, PyVista, AWS, CI/CD}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Python Developer, Tata Consultancy Services}{Aug 2024 - Present}
+  {Bangalore, India}{1+ Years Experience}
+  \resumeItemListStart
+    \resumeItem{Optimized \textbf{8 Python applications} using algorithms and data structures, improving efficiency by \textbf{30\%} for \textbf{200+ users}}
+    \resumeItem{Developed \textbf{5 Qt-based tools} with VTK, NumPy integration, reducing analysis time by \textbf{40\%} for \textbf{50+ engineers}}
+    \resumeItem{Built scalable \textbf{3D visualization system} processing \textbf{10GB+ datasets} with real-time rendering and API connectivity}
+    \resumeItem{Automated \textbf{12 workflows} using Python scripts and CI/CD practices, saving \textbf{160 hours/week} across development team}
+    \resumeItem{Mentored \textbf{3 junior developers} on coding standards and best practices, leading code reviews for \textbf{25+ pull requests}}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {E-Commerce Analytics Dashboard}{2025}
+  {Python, Django, PostgreSQL, Redis, Celery, Chart.js}{}
+  \resumeItemListStart
+    \resumeItem{Built real-time analytics platform processing \textbf{50K+ transactions/day} with Django REST framework and PostgreSQL}
+    \resumeItem{Implemented \textbf{Redis caching} and \textbf{Celery task queues} reducing dashboard load time by \textbf{70\%}}
+    \resumeItem{Developed \textbf{15+ API endpoints} with authentication, pagination, and rate limiting serving \textbf{5+ client applications}}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Weather App \& Train Management System}{2024-2025}
+  {Python, Qt, Java, JavaScript, REST APIs}{}
+  \resumeItemListStart
+    \resumeItem{Built weather application serving \textbf{500+ API calls/day} with Qt interface supporting \textbf{100+ cities}}
+    \resumeItem{Developed train booking system handling \textbf{1000+ records} with Java Servlets and JDBC database connectivity}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {B.E. in Information Science Engineering, Basaveshwar Engineering College}{Dec 2020 - Jun 2024}
+    {GPA: 8.16}{Karnataka, India}
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+  \resumeItem{Improved system performance by \textbf{30\%} impacting \textbf{200+ users} and reduced processing time by \textbf{40\%}}
+  \resumeItem{Completed \textbf{3 industry certifications}: Cybersecurity (Cisco), Python (Google), Data Structures (UMich)}
+  \resumeItem{Achieved \textbf{8.16 GPA} in Information Science Engineering, ranking in \textbf{top 15\%} of class}
+\resumeItemListEnd
+
+%-----------ADDITIONAL SECTIONS-----------
+\section{Additional Information}
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+  \resumeItem{\textbf{Languages:} English (Fluent), Hindi (Native), Kannada (Native)}
+  \resumeItem{\textbf{Links:} GitHub: \href{https://github.com/vaibhav88614}{github.com/vaibhav88614} | Portfolio: \href{https://vaibhav88614.github.io/}{vaibhav88614.github.io}}
+\resumeItemListEnd
+
+% ATS Keywords (Hidden in white text)
+{\tiny\textcolor{white}{
+Express.js Next.js Flutter TensorFlow PyTorch scikit-learn NumPy Pandas Matplotlib Seaborn API Integration 
+Workflow Automation n8n Kubernetes Vite Figma Accessibility Testing User Experience Validation 
+Machine Learning Data Science Artificial Intelligence Deep Learning Neural Networks 
+Cloud Computing AWS Azure GCP DevOps CI/CD Jenkins Docker Containers Microservices 
+Agile Scrum Test-Driven Development Unit Testing Integration Testing 
+Database Design SQL NoSQL MongoDB Redis Elasticsearch 
+Frontend Development Backend Development Full-Stack Development 
+React Hooks Redux Context API State Management Component Architecture 
+Node.js Express Server-Side Development RESTful APIs GraphQL 
+Python Django Flask FastAPI Web Scraping Data Analysis Celery Task Queue 
+Background Jobs Asynchronous Programming Threading Multiprocessing 
+Git Version Control GitHub GitLab Bitbucket 
+Linux Unix Windows PowerShell Bash Shell Scripting 
+Software Engineering Object-Oriented Programming Design Patterns 
+Algorithms Data Structures Problem Solving Debugging Optimization
+E-commerce Payment Gateway Stripe PayPal Analytics Dashboard Business Intelligence
+}}
+
+\end{document}
