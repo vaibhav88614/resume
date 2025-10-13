@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Abey George template (Customized for Sumanth)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usetikzlibrary{svg.path}
+
+% Colors
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{body}{SlateGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Sumanth Gowda HL} \\ \vspace{1pt}
+    \small
+    {India} \quad
+    {Phone: +91 7411280552} \quad
+    \underline{\href{mailto:sumanthgowdahl16@gmail.com}{Email: sumanthgowdahl16@gmail.com}} \quad
+    \underline{\href{https://linkedin.com/in/sumanthgowdahl}{LinkedIn}} \quad
+    \underline{\href{https://github.com/sumanthgowdahl}{GitHub}} 
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Professional Summary}
+\textbf{Java Backend Developer} with \textbf{3+ years} of enterprise-grade experience in \textbf{microservices architecture, Spring ecosystem, and scalable REST APIs}. Expert in \textbf{Java 8/11/17, Spring Boot, Spring Security, JPA/Hibernate, and distributed systems}. Specialized in \textbf{database optimization, API design patterns, and containerized deployments} with proven track record in \textbf{high-performance backend solutions serving 1000+ concurrent users}.
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+  \setlength{\itemsep}{1pt}
+  \resumeItem{\textbf{Java Technologies:} Java 8/11/17, Collections, Multithreading, Lambda Expressions, Stream API, Exception Handling}
+  \resumeItem{\textbf{Spring Ecosystem:} Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring AOP, Bean Management}
+  \resumeItem{\textbf{Backend \& APIs:} RESTful Services, Microservices, GraphQL, JSON/XML Processing, API Gateway, Load Balancing}
+  \resumeItem{\textbf{Databases:} MySQL, PostgreSQL, MongoDB, Hibernate/JPA, Query Optimization, Database Design, Transactions}
+  \resumeItem{\textbf{DevOps \& Tools:} Docker, Kubernetes, Jenkins, Maven, Git, JUnit, Mockito, Postman, SonarQube}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Senior Java Backend Developer, Tata Consultancy Services}{Jul 2024 - Present}
+  {Associate Software Engineer | Microservices Architecture}{India}
+  \resumeItemListStart
+    \resumeItem{Architected \textbf{15+ microservices} with Spring Boot, Docker serving \textbf{1000+ users} with \textbf{99.9\% uptime}}
+    \resumeItem{Implemented \textbf{JWT/OAuth2.0 authentication} and optimized database schemas improving performance by \textbf{45\%}}
+    \resumeItem{Built \textbf{event-driven architecture} with Kafka/Redis, reducing API response time from \textbf{800ms to 120ms}}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Java Backend Developer, Tata Consultancy Services}{Jun 2022 - Jun 2024}
+  {Client: Ford Motor Company | Enterprise Systems Development}{India}
+  \resumeItemListStart
+    \resumeItem{Developed \textbf{RESTful APIs} handling \textbf{50,000+ daily transactions} with Spring Security and JPA}
+    \resumeItem{Integrated \textbf{third-party APIs} with \textbf{circuit breakers/retry mechanisms} ensuring \textbf{99.5\% system reliability}}
+    \resumeItem{Optimized \textbf{SQL queries}, reduced memory usage by \textbf{30\%} and mentored \textbf{5+ developers}}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Enterprise Microservices Platform}{2024}
+    {Java 17, Spring Boot, Docker, Kubernetes, PostgreSQL, Redis}{}
+    \resumeItemListStart
+      \resumeItem{Built \textbf{8-service microservices architecture} handling \textbf{100K+ requests/day} with \textbf{sub-200ms latency}}
+      \resumeItem{Implemented \textbf{CQRS, event sourcing} with Kafka and designed \textbf{resilient APIs} with circuit breakers}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {E-Commerce Backend System \& Real-Time Engine}{2023-2024}
+    {Java 11/17, Spring WebFlux, MySQL, MongoDB, Kafka, Redis}{}
+    \resumeItemListStart
+      \resumeItem{Developed \textbf{reactive backend} processing \textbf{10,000+ events/sec} with Spring WebFlux and streaming pipelines}
+      \resumeItem{Architected \textbf{e-commerce platform} with JWT authentication serving \textbf{5000+ users} and \textbf{99.5\% success rate}}
+    \resumeItemListEnd\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {B.E. Mechanical Engineering, Navkis College of Engineering (VTU)}{2017 - 2021}
+    {GPA: 8.1/10 | Coursework: Java, Spring Boot}{Karnataka, India}
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+  \resumeItem{\textbf{Oracle Certified Java Developer} | \textbf{Spring Professional Certification} | \textbf{AWS Solutions Architect Associate}}
+  \resumeItem{Optimized system performance by \textbf{45\%} through JVM tuning and reduced memory leaks by \textbf{80\%} in production}
+  \resumeItem{\textbf{TCS Excellence Award 2024} for Java backend innovations | Led \textbf{3+ microservices migration projects}}
+\resumeItemListEnd
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+  \resumeItem{\textbf{Languages:} English, Hindi, Kannada | \textbf{Specializations:} Microservices, Event-Driven Architecture, JVM Tuning}
+\resumeItemListEnd
+
+% ATS Keywords (Hidden)
+{\fontsize{1pt}{1pt}\selectfont\textcolor{white}{Java Backend Developer Spring Boot Spring Framework Spring Security Spring Data JPA Hibernate Microservices RESTful APIs GraphQL JSON XML Maven Gradle JUnit Mockito Docker Kubernetes Jenkins CI/CD Git PostgreSQL MySQL MongoDB Redis Kafka Multithreading Collections Lambda Stream API Exception Handling SOLID Principles Design Patterns MVC Architecture Event-Driven Architecture CQRS OAuth2 JWT Authentication Authorization Database Optimization Query Performance JVM Tuning Memory Management Scalable Systems High Availability Load Balancing API Gateway Circuit Breaker Retry Mechanism Distributed Systems Cloud Computing AWS Azure Containerization DevOps Agile TDD Clean Code SOAP Web Services Reactive Programming Spring WebFlux Non-blocking IO Concurrency Thread Safety Synchronization}}
+
+\end{document}
