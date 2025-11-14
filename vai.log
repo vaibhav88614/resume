@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.12)  12 OCT 2025 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.12)  10 NOV 2025 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,11 +834,11 @@ Package rerunfilecheck Info: File `vai.out' has not changed.
 Here is how much of TeX's memory you used:
  24790 strings out of 474486
  482257 string characters out of 5743282
- 1954542 words of memory out of 5000000
+ 1955542 words of memory out of 5000000
  46685 multiletter control sequences out of 15000+600000
  564597 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,93p,409b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,6n,93p,442b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\dzkqcq\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1000.pk> <C:\Users\dzkqcq\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\tcrm1095.pk><C:/Users/dzkqcq/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -847,7 +847,7 @@ type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dzkqcq/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dzkqcq/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/dzkqcq/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on vai.pdf (1 page, 111608 bytes).
+Output written on vai.pdf (1 page, 113929 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
