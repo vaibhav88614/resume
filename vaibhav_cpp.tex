@@ -1,0 +1,168 @@
+%-------------------------
+% C++ / Systems focused resume (Vaibhav Patil)
+% Based on Abey George template (same preamble as vai.tex)
+%
+% HONESTY SWITCHES (edit before sending):
+%   \showprojectstrue  -> shows the "Projects" section. Turn on ONLY after
+%                         you have built/understood the projects in cpp_projects/
+%   Skills marked "Familiar with" should be moved to the main lines only
+%   if you can answer interview questions on them.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usetikzlibrary{svg.path}
+
+% ---- switches ----
+\newif\ifshowprojects
+\showprojectsfalse   % change to \showprojectstrue once projects are real
+
+% Colors
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{body}{SlateGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Vaibhav Patil} \\ \vspace{1pt}
+    {\small \textbf{Software Developer} \,|\, C++ \,\textbullet\, OOP \,\textbullet\, Multithreading \,\textbullet\, Windows Desktop \,\textbullet\, CAD/CAE Visualization} \\ \vspace{1pt}
+    \small
+    {Bangalore, India} \quad
+    {Phone: +91 886 149 5511} \quad
+    \underline{\href{mailto:vaibhavrpatilmanu@gmail.com}{Email: vaibhavrpatilmanu@gmail.com}} \quad
+    \underline{\href{https://www.linkedin.com/in/vaibhavrp614/}{LinkedIn}} \quad
+    \underline{\href{https://vaibhav88614.github.io/}{Portfolio}} \quad
+    \underline{\href{https://leetcode.com/u/Vaibhav614/}{LeetCode}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Professional Summary}
+Software developer with \textbf{1.5 years} at \textbf{Tata Consultancy Services} building engineering-oriented applications for \textbf{50+ engineers} and \textbf{200+ users}. Strong foundation in \textbf{C++, object-oriented design, data structures and concurrency concepts}, with hands-on experience in \textbf{VTK-based data visualization}, performance optimization and automation. Looking to grow in \textbf{C++ desktop and CAD/CAE tooling} (MFC, COM, NX, STAR-CCM+ workflows).
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+  \setlength{\itemsep}{1pt}
+  \resumeItem{\textbf{Languages:} C++ (STL, templates, RAII, smart pointers), C, Python, SQL}
+  \resumeItem{\textbf{OOP \& Design:} Encapsulation, inheritance, polymorphism, SOLID, design patterns (Factory, Observer, Strategy), data structures \& algorithms}
+  \resumeItem{\textbf{Concurrency:} Threads, mutexes, condition variables, thread pools, race conditions \& deadlock avoidance (C++11/17 \texttt{<thread>}, \texttt{<mutex>}, \texttt{<atomic>})}
+  \resumeItem{\textbf{Visualization \& CAD/CAE:} VTK; familiar with NX and STAR-CCM+ data workflows (CAD geometry, mesh and simulation result formats)}
+  \resumeItem{\textbf{Windows Desktop:} Familiar with MFC (document/view, message maps) and COM fundamentals (interfaces, reference counting)}
+  \resumeItem{\textbf{Tools:} Git, Visual Studio, CMake, Linux, CI/CD, PostgreSQL, MySQL}
+  \resumeItem{\textbf{Also:} Python (Django, FastAPI, Pandas), React.js, AWS (EC2, Lambda, S3)}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Python Developer, Tata Consultancy Services}{Aug 2024 - Present}
+  {Bangalore, India}{1.5 Years Experience}
+  \resumeItemListStart
+    \resumeItem{Designed and delivered \textbf{8 modular, object-oriented applications} (Django/FastAPI), improving efficiency by \textbf{30\%} for \textbf{200+ users}}
+    \resumeItem{Built \textbf{engineering analysis dashboards} on Python backends with VTK-based visualization support, reducing analysis time by \textbf{40\%} for \textbf{50+ engineers}}
+    \resumeItem{Optimized \textbf{PostgreSQL queries} and added Redis caching, cutting API response time by \textbf{65\%}}
+    \resumeItem{Deployed on \textbf{AWS EC2/Lambda} with S3 storage, processing \textbf{5GB+ datasets} at \textbf{99.9\%} uptime}
+    \resumeItem{Automated \textbf{12 CI/CD workflows}, saving \textbf{160 hours/week}}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS (hidden until real)-----------
+\ifshowprojects
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Multithreaded C++17 Mesh Processing Library}{2026}
+  {C++17, std::thread, CMake, Git}{}
+  \resumeItemListStart
+    \resumeItem{Implemented a \textbf{thread pool} with task queue (mutex + condition variable) and a \textbf{parallel reduction} for mesh bounding-box and statistics}
+    \resumeItem{Applied \textbf{RAII, smart pointers and polymorphic mesh readers} (Factory pattern) with a CMake build}
+    \resumeItem{Benchmarked serial vs.\ parallel execution and verified thread safety with sanitizers/stress tests}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\fi
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {B.E. in Information Science Engineering, Basaveshwar Engineering College}{Dec 2020 - Jun 2024}
+    {GPA: 8.16}{Karnataka, India}
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Certifications \& Additional Information}
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+    \resumeItem{Completed \textbf{5 certifications}: Python (Google), Cybersecurity (Cisco), Data Structures}
+    \resumeItem{\textbf{Languages:} English (Fluent), Hindi (Native), Kannada (Native)}
+    \resumeItem{\textbf{Links:} GitHub: \href{https://github.com/vaibhav88614}{github.com/vaibhav88614} | Portfolio: \href{https://vaibhav88614.github.io/}{vaibhav88614.github.io}}
+\resumeItemListEnd
+
+\end{document}
